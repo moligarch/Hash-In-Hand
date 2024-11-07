@@ -71,32 +71,23 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>$(SolutionDir)Build\bin\$(PlatformShortName)\$(Configuration)</OutDir>
-    <IntDir>$(SolutionDir)Build\obj\$(ProjectName)\$(PlatformShortName)\$(Configuration)</IntDir>
+    <OutDir>$(SolutionDir)Build\bin\$(PlatformShortName)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Build\obj\$(ProjectName)\$(PlatformShortName)\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>$(SolutionDir)Build\bin\$(PlatformShortName)\$(Configuration)</OutDir>
-    <IntDir>$(SolutionDir)Build\obj\$(ProjectName)\$(PlatformShortName)\$(Configuration)</IntDir>
+    <OutDir>$(SolutionDir)Build\bin\$(PlatformShortName)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Build\obj\$(ProjectName)\$(PlatformShortName)\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <OutDir>$(SolutionDir)Build\bin\$(PlatformShortName)\$(Configuration)</OutDir>
-    <IntDir>$(SolutionDir)Build\obj\$(ProjectName)\$(PlatformShortName)\$(Configuration)</IntDir>
+    <OutDir>$(SolutionDir)Build\bin\$(PlatformShortName)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Build\obj\$(ProjectName)\$(PlatformShortName)\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <OutDir>$(SolutionDir)Build\bin\$(PlatformShortName)\$(Configuration)</OutDir>
-    <IntDir>$(SolutionDir)Build\obj\$(ProjectName)\$(PlatformShortName)\$(Configuration)</IntDir>
+    <OutDir>$(SolutionDir)Build\bin\$(PlatformShortName)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Build\obj\$(ProjectName)\$(PlatformShortName)\$(Configuration)\</IntDir>
   </PropertyGroup>
-  <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <VcpkgInstalledDir>$(SolutionDir)vcpkg</VcpkgInstalledDir>
-  </PropertyGroup>
-  <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <VcpkgInstalledDir>$(SolutionDir)vcpkg</VcpkgInstalledDir>
-  </PropertyGroup>
-  <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <VcpkgInstalledDir>$(SolutionDir)vcpkg</VcpkgInstalledDir>
-  </PropertyGroup>
-  <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <VcpkgInstalledDir>$(SolutionDir)vcpkg</VcpkgInstalledDir>
+  <PropertyGroup Label="Vcpkg">
+    <VcpkgEnableManifest>true</VcpkgEnableManifest>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -175,7 +166,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="HashInHandCLI.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HashInHandLib\HashInHandLib.vcxproj">
+      <Project>{ddcb27b3-505e-44e4-9cfc-65e06cffd602}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
