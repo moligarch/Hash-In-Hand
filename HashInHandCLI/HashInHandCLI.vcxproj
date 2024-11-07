@@ -169,6 +169,8 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ResourceCompile Include="HashInHandCLI.rc" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\HashInHandLib\HashInHandLib.vcxproj">
       <Project>{ddcb27b3-505e-44e4-9cfc-65e06cffd602}</Project>
