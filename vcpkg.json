@@ -4,11 +4,11 @@
   "dependencies": [
 	  {
 		"name": "gtest", 
-		"platform": "(x64 & windows) | (x86 & windows)"
+		"platform": "windows"
 	  },
 	  {
 		"name": "openssl", 
-		"platform": "(x64 & windows) | (x86 & windows)"
+		"platform": "windows"
 	  }
   ],
   "overrides": [
