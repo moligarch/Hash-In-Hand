@@ -21,13 +21,22 @@
     <ClInclude Include="include\hih.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\hih\sha.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="include\hih\md.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\hih\crc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hih\type.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hih\result.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\utility.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hih\sha256.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -38,10 +47,10 @@
     <ClCompile Include="lib\crc.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="lib\sha.cpp">
+    <ClCompile Include="lib\md.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="lib\md.cpp">
+    <ClCompile Include="lib\sha256.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

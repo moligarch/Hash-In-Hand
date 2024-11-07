@@ -1,0 +1,25 @@
+{
+  "name": "hash-in-hand",
+  "version": "0.0.0.1",
+  "dependencies": [
+	  {
+		"name": "gtest", 
+		"platform": "(x64 & windows) | (x86 & windows)"
+	  },
+	  {
+		"name": "openssl", 
+		"platform": "(x64 & windows) | (x86 & windows)"
+	  }
+  ],
+  "overrides": [
+    { 
+        "name": "gtest", 
+        "version": "1.15.2"
+    },
+	{
+		"name": "openssl", 
+        "version": "3.4.0"
+	}
+  ],
+  "builtin-baseline": "8e7f6491ae3cae2f26eacadda80a45e548b2d9e8"
+}

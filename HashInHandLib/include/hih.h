@@ -5,7 +5,7 @@
 
 #include "hih/crc.h"
 #include "hih/md.h"
-#include "hih/sha.h"
+#include "hih/sha256.h"
 
 
 

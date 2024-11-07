@@ -1,0 +1,10 @@
+<Project DefaultTargets="Build">
+	<PropertyGroup>
+		<OutDir>$(SolutionDir)Build\bin\$(PlatformShortName)\$(Configuration)\</OutDir>
+		<IntDir>$(SolutionDir)Build\obj\$(ProjectName)\$(PlatformShortName)\$(Configuration)\</IntDir>
+	</PropertyGroup>
+
+	<PropertyGroup Label="Vcpkg">
+		<VcpkgInstalledDir>$(SolutionDir)vcpkg_installed\</VcpkgInstalledDir>
+	</PropertyGroup>
+</Project>
