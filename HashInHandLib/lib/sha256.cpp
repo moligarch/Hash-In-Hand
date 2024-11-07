@@ -8,7 +8,7 @@
 
 namespace hih {
 	namespace sha {
-		hih::state get_file_sha256(std::string& hash, const fs::path& source)
+		hih::state get_file_sha256(const fs::path& source, std::string& hash)
 		{
             hih::file_t buffer{};
             auto state = hih::utility::read(source, buffer);

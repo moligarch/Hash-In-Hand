@@ -8,7 +8,7 @@
 
 namespace hih {
 	namespace sha {
-		state get_file_sha256(std::string& hash, const fs::path& source);
+		state get_file_sha256(const fs::path& source, std::string& hash);
 	}
 
 	namespace utility
